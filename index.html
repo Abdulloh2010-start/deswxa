@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REACT PIZZA</title>
+  <link rel="shortcut icon" href="./img/image 1.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="./img/image 1.png" alt="React Pizza" />
+        <div>
+          <h1>React Pizza</h1>
+          <p>самая вкусная пицца во вселенной</p>
+        </div>
+      </div>
+      <div class="cart1">
+        <button id="cart-button">
+          <span id="cart-price">0 ₽</span>
+          <div class="line">|</div>
+          <span id="cart-count">0</span>
+        </button>
+      </div>      
+    </header>
+    <main>
+      <div class="top-panel">
+        <div class="categories" id="category-buttons">
+            <button data-category="all">Все</button>
+            <button data-category="Мясные">Мясные</button>
+            <button data-category="Вегетарианская">Вегетарианская</button>
+            <button data-category="Гриль">Гриль</button>
+            <button data-category="Острые">Острые</button>
+            <button data-category="Закрытые">Закрытые</button>          
+          </div>          
+        <div class="sort">
+          <label for="sort-select">Сортировка по:</label>
+          <select id="sort-select">
+            <option value="rating">популярности</option>
+            <option value="price">цене</option>
+            <option value="alphabet">алфавиту</option>
+          </select>
+        </div>
+      </div>
+      <h2 class="title">Все пиццы</h2>
+      <div class="pizza-list" id="pizza-list">
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
